@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Шерине «Чёрная касса» — Ала‑Арча, 31.08.2025</title>
+  <meta name="description" content="Приглашение на шерине «Чёрная касса» в домиках Ала‑Арча. 31 августа 2025, 12:00. Присоединяйтесь!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0f1021;--bg2:#1b1c3a;--acc:#7bc7ff;--acc2:#f8d57e;--glass:rgba(255,255,255,.08);--text:#e8e8ef;--muted:#b6b7c7;--ok:#58d68d;--warn:#ffb86b;--danger:#ff6b81;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 800px at 70% -10%,rgba(123,199,255,.18),transparent),
+                  radial-gradient(1000px 600px at -20% 120%,rgba(248,213,126,.12),transparent),
+                  linear-gradient(160deg,var(--bg1),var(--bg2));
+         color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--acc),#9ee8ff);display:grid;place-items:center;color:#0b2233;font-weight:800}
+    .nav a{opacity:.85;margin-left:18px}
+
+    /* Hero */
+    .hero{position:relative;margin-top:40px;border-radius:28px;padding:42px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
+          border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(8px);overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:-40px;filter:blur(60px);background:conic-gradient(from 220deg at 70% 20%, rgba(123,199,255,.28), rgba(248,213,126,.24), transparent 40%, rgba(123,199,255,.18));opacity:.6;}
+    .hero h1{font-family:"Playfair Display",serif;font-size: clamp(28px, 6vw, 58px);line-height:1.05;margin:0 0 14px}
+    .hero p.lead{font-size:clamp(15px,2.4vw,20px);color:var(--muted);margin:0 0 26px}
+
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(123,199,255,.12);border:1px solid rgba(123,199,255,.35);color:#cbe9ff;font-weight:600;font-size:13px}
+    .kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0 0}
+    .kpi .card{background:var(--glass);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px}
+    .kpi .label{font-size:12px;color:var(--muted)}
+    .kpi .value{font-weight:800;font-size:18px;margin-top:4px}
+
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:14px;border:1px solid rgba(255,255,255,.2);background:#e8ecff10;color:#fff;font-weight:700}
+    .btn.primary{background:linear-gradient(180deg,var(--acc),#75bdf3);color:#0b2233;border-color:transparent}
+    .btn.secondary{background:rgba(255,255,255,.06)}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.25);transition:.2s}
+
+    /* Details */
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:36px}
+    .col-7{grid-column:span 7}
+    .col-5{grid-column:span 5}
+    .card{background:var(--glass);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:22px}
+    h2{font-size:26px;margin:0 0 14px;font-family:"Playfair Display",serif}
+    .list{display:grid;gap:12px}
+    .list .row{display:flex;gap:12px;align-items:flex-start}
+    .ico{flex:0 0 28px;height:28px;border-radius:8px;display:grid;place-items:center;background:rgba(255,255,255,.12)}
+    .muted{color:var(--muted)}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);}
+
+    /* Map */
+    .map{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
+
+    /* Footer */
+    footer{margin:32px 0 10px;color:var(--muted);text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .col-7,.col-5{grid-column:span 1}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:540px){
+      .kpi{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">ЧК</div>
+        <div>
+          <div style="font-weight:800;letter-spacing:.3px">Шерине «Чёрная касса»</div>
+          <div class="muted" style="font-size:12px">Домики Ала‑Арча • 31 августа 2025</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#details">О событии</a>
+        <a href="#map">Локация</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">🗓 31.08.2025 • 12:00 • Ала‑Арча</span>
+      <h1>Приглашаем на шерине <span style="background:linear-gradient(90deg,#b8f1ff,#ffe59d);-webkit-background-clip:text;background-clip:text;color:transparent">«Чёрная касса»</span></h1>
+      <p class="lead">Тёплая встреча друзей в домиках Ала‑Арча: вкусный плов, горный воздух, музыка и планы на будущее. Будем рады каждому!</p>
+
+      <div class="kpi">
+        <div class="card"><div class="label">Когда</div><div class="value">31 августа 2025, 12:00</div></div>
+        <div class="card"><div class="label">Где</div><div class="value">Домики Ала‑Арча (парк)</div></div>
+        <div class="card"><div class="label">Дресс‑код</div><div class="value">Casual / outdoor</div></div>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary" id="rsvpBtn" href="#">✅ Подтвердить участие</a>
+        <button class="btn secondary" id="addCalendar">🗓 Добавить в календарь</button>
+        <button class="btn secondary" id="copyLink">🔗 Скопировать ссылку</button>
+      </div>
+
+      <div id="count" class="muted" style="margin-top:12px;font-weight:600"></div>
+    </section>
+
+    <section id="details" class="grid">
+      <div class="col-7 card">
+        <h2>Что планируем</h2>
+        <div class="list">
+          <div class="row"><div class="ico">🍲</div><div><strong>Плов & чай</strong><div class="muted">Горячий плов, самса, чай и сладости — всё как на настоящем шерине.</div></div></div>
+          <div class="row"><div class="ico">🎶</div><div><strong>Музыка и игры</strong><div class="muted">Портативная акустика, настолки и небольшой квиз. Берите гитару!</div></div></div>
+          <div class="row"><div class="ico">🏔️</div><div><strong>Прогулка по парку</strong><div class="muted">Лёгкий хайк у реки Аллаш‑Сай. Удобная обувь приветствуется.</div></div></div>
+          <div class="row"><div class="ico">💸</div><div><strong>Чёрная касса</strong><div class="muted">Соберёмся, обсудим правила и цели на следующий круг.</div></div></div>
+        </div>
+        <div class="card" style="margin-top:16px;background:rgba(88,214,141,.12);border-color:rgba(88,214,141,.4)">
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div class="ico" style="background:rgba(88,214,141,.25)">✅</div>
+            <div>
+              <strong>С собой</strong>
+              <div class="muted">Улыбку, плед, термос, удобную обувь, наличные на долю в кассу (по желанию), и хорошее настроение.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-5 card">
+        <h2>Галерея</h2>
+        <div class="gallery">
+          <img alt="Ала‑Арча горы" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"/>
+          <img alt="Шашлыки" src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=1200&auto=format&fit=crop"/>
+          <img alt="Друзья на природе" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop"/>
+          <img alt="Горная река" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"/>
+          <img alt="Плов" src="https://images.unsplash.com/photo-1620705946431-233a5cf8c1d3?q=80&w=1200&auto=format&fit=crop"/>
+          <img alt="Вечер у костра" src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?q=80&w=1200&auto=format&fit=crop"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="grid" style="margin-top:18px">
+      <div class="col-7 card">
+        <h2>Как добраться</h2>
+        <p class="muted">Домики в парке «Ала‑Арча». От Бишкек‑Парк — ~40 минут на авто. Встретимся у ворот парка в 11:40 и поедем внутрь вместе.</p>
+        <div class="map">
+          <iframe title="Карта — Ала‑Арча" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28545.92741313484!2d74.472!3d42.563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389c9d2f4c8a0a6f%3A0x2e3d184f9e5f7e3!2sAla-Archa%20National%20Park!5e0!3m2!1sru!2skg!4v1710000000000" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+          <a class="btn" href="https://maps.google.com/?q=Ala-Archa%20National%20Park" target="_blank">📍 Открыть в Google Maps</a>
+          <a class="btn" href="yandexnavi://build_route_on_map?lat_to=42.563&lon_to=74.472" target="_blank">🧭 Маршрут (Яндекс.Навигатор)</a>
+        </div>
+      </div>
+      <div class="col-5 card" id="faq">
+        <h2>FAQ</h2>
+        <div class="list">
+          <div class="row"><div class="ico">⏰</div><div><strong>Во сколько приезжать?</strong><div class="muted">Старт в 12:00. Лучше быть у ворот парка к 11:40.</div></div></div>
+          <div class="row"><div class="ico">👕</div><div><strong>Что надеть?</strong><div class="muted">Удобную одежду и обувь для природы. Вечером может похолодать — возьмите кофту.</div></div></div>
+          <div class="row"><div class="ico">🎁</div><div><strong>Нужно ли что‑то приносить?</strong><div class="muted">Можно прихватить фрукты/сладости/чай. Основное — организуем.</div></div></div>
+          <div class="row"><div class="ico">🚗</div><div><strong>Парковка</strong><div class="muted">Парковка у домиков есть. Если нужен трансфер — пишите организатору.</div></div></div>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div class="ico">☎️</div>
+            <div>
+              <strong>Контакт организатора</strong>
+              <div class="muted">WhatsApp для RSVP и вопросов:</div>
+              <div style="margin-top:6px"><a id="waLink" class="btn primary" target="_blank" href="#">Написать в WhatsApp</a></div>
+              <div class="muted" style="font-size:12px;margin-top:6px">Если ссылка не открывается — напишите по номеру <span id="phoneText"></span>.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Сделано с любовью для друзей • 2025
+    </footer>
+  </div>
+
+  <script>
+    // === Настройки (легко поменять) ===
+    const EVENT_TITLE = "Шерине — Чёрная касса";
+    // Бишкек UTC+6 → для .ics используем UTC
+    const EVENT_START_LOCAL = new Date("2025-08-31T12:00:00+06:00");
+    const EVENT_END_LOCAL   = new Date("2025-08-31T16:00:00+06:00");
+    const EVENT_LOCATION = "Домики Ала‑Арча, Национальный парк";
+    const EVENT_DESC = "Тёплая встреча друзей в домиках Ала‑Арча. Плов, музыка, прогулка и планы на будущее.";
+
+    // Телефон организатора для WhatsApp (можно заменить)
+    const ORGANIZER_PHONE = "+77005006582"; // формат +7XXXXXXXXXX
+
+    // === Кнопка WhatsApp / RSVP ===
+    const waText = encodeURIComponent("Салам! Подтверждаю участие на шерине 31.08.2025. Меня зовут …");
+    const waHref = `https://wa.me/${ORGANIZER_PHONE.replace(/\D/g, '')}?text=${waText}`;
+    document.getElementById('waLink').href = waHref;
+    document.getElementById('rsvpBtn').href = waHref;
+    document.getElementById('rsvpBtn').target = "_blank";
+    document.getElementById('phoneText').textContent = ORGANIZER_PHONE;
+
+    // === Кнопка «Добавить в календарь» (генерация .ics) ===
+    function toICSDate(dt){
+      // Возвращаем формат YYYYMMDDTHHMMSSZ в UTC
+      const z = new Date(dt.getTime() - dt.getTimezoneOffset()*60000);
+      return z.toISOString().replace(/[-:]/g, '').replace(/\..+/, '');
+    }
+    function downloadICS(){
+      const ics = `BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//SheRine//ALA-ARCHA//RU\nBEGIN:VEVENT\nUID:${crypto.randomUUID()}\nDTSTAMP:${toICSDate(new Date())}Z\nDTSTART:${toICSDate(EVENT_START_LOCAL)}Z\nDTEND:${toICSDate(EVENT_END_LOCAL)}Z\nSUMMARY:${EVENT_TITLE}\nLOCATION:${EVENT_LOCATION}\nDESCRIPTION:${EVENT_DESC}\nEND:VEVENT\nEND:VCALENDAR`;
+      const blob = new Blob([ics], {type:'text/calendar'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'sherine-ala-archa-2025-08-31.ics';
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    }
+    document.getElementById('addCalendar').addEventListener('click', downloadICS);
+
+    // === Копирование ссылки ===
+    document.getElementById('copyLink').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(location.href); alert('Ссылка скопирована!'); }
+      catch { alert('Не удалось скопировать ссылку'); }
+    });
+
+    // === Таймер обратного отсчёта ===
+    function tick(){
+      const now = new Date();
+      const target = EVENT_START_LOCAL;
+      let diff = target - now;
+      const el = document.getElementById('count');
+      if(diff <= 0){ el.textContent = 'Событие уже началось — ждём тебя!'; return; }
+      const d = Math.floor(diff/86400000); diff -= d*86400000;
+      const h = Math.floor(diff/3600000);  diff -= h*3600000;
+      const m = Math.floor(diff/60000);    diff -= m*60000;
+      const s = Math.floor(diff/1000);
+      el.textContent = `Старт через ${d}д ${h}ч ${m}м ${s}с`;
+    }
+    tick(); setInterval(tick, 1000);
+  </script>
+</body>
+</html>
